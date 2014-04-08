@@ -1,0 +1,51 @@
+// calcular la nota.cpp 
+// autor: flavia vaca morant
+// fecha: 8 de abril del 2014
+
+ #include "stdafx.h"
+ #include <iostream>
+ #include "conio.h"
+ using namespace std;
+ void main()
+{
+  float parcial1,parcial2,parcial3,practico,final,nf;
+ do
+  {  
+	  cout<<"Ingrese parcial:";
+      cin>>parcial1;
+  }
+  while (parcial1>100 ||parcial1<0) ;
+
+  while (parcial1!=-99) 
+  {
+    do
+  {   cout<<"ingrese parcial2:" ;
+      cin>>parcial2;
+   while (parcial2>100 || parcial1<0);
+  }
+    do
+  {   cout<< "ingrese parcial3:" ;
+      cin>>parcial3;
+   while (parcial3>100 || parcial3<0);
+  
+    do
+	{ cout<<"ingrese practico:" ;
+	  cin>> practico;
+	}
+   while (practico>100) || (parctico<0) ;
+    do
+  {   cout<< "introdusca el final" ;
+      cin>> final ;
+  }
+   while (nf>100) || (nf<0);
+   nf= ((parcial1+parcial2+parcial3/3)*0.4+practico*0.2+final*0.4) ;
+      cout<<"nota final"<<nf;
+    do
+  {   cout<<"ingrese parcial1";
+      cin>> parcial1;
+  }
+   while ((parcial1>100) || (parcial1<0));
+  }
+ getch () ;
+ }
+ 
