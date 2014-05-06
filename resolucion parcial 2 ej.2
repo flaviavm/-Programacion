@@ -1,0 +1,35 @@
+// Revision del parcial.cpp : Defines the entry point for the console application.
+//Autor : Flavia Vaca M
+//Fecha : 6 de Mayo del 2014
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	int N, R, D, S;
+	float i;
+	cout << " Ingrese N: ";
+	cin >> N;
+	cout << " Ingrese el valor de R:";
+	cin >> R;
+	S = 0;
+	i = 0;
+	while (N > 0)
+	{
+		D = N % 10;
+		N = N / 10;
+		S = S + D * pow(R, i);
+		i = i + 1;
+	}
+	cout << " El valor en base decimal es:";
+	cout << S;
+	
+	getch();
+
+}
