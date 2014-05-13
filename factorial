@@ -1,0 +1,44 @@
+// Factorial.cpp : Defines the entry point for the console application.
+// Autor: Flavia Vaca M
+// Fecha: 13 de Mayo del 2014
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+using namespace std ;
+float potencia (float base, int exponente) ;
+int factorial (int numero);
+void main ()
+{
+ float suma;
+ int x,n,i;
+  cout<< " Ingrese el valor de x: " ;
+  cin>>x;
+  cout<< " Ingrese el valor de n: " ;
+  cin>> n;
+   suma=0;
+for ( i=1;i<=n;i++)
+suma=suma+potencia (x,i)/factorial (i);
+cout<< "El resultado es: " <<suma;
+
+getch () ;
+}
+ int factorial (int numero)
+ {
+ 
+	 int fact;
+	 fact=1;
+ for (int i=1; i<numero; i++)
+	 fact=fact*i;
+ return (fact);
+ }
+ 
+ float potencia (float base, int exponente) 
+ {
+	 float pot,i;
+	 pot=1;
+	 for (int i=1; i<=exponente; i++)
+		 pot=pot*base;
+	 return (pot);
+ }
+ 
